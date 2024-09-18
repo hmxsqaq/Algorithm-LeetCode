@@ -4,4 +4,4 @@ A log of my LeetCode problem-solving journey.
 
 ## Table of Contents
 
-// todo
+- [1.Two Sum](1_two_sum.md)
