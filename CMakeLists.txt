@@ -9,4 +9,4 @@ file(GLOB_RECURSE SOURCES
         "${CMAKE_SOURCE_DIR}/src/*.cc"
 )
 
-add_executable(${PROJECT_NAME} WIN32 ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES})
