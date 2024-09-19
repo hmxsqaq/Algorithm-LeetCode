@@ -2,6 +2,7 @@
 #define ALGORITHM_LEETCODE_UTILITY_H
 
 #include <iostream>
+#include <string>
 #include <array>
 #include <vector>
 #include <list>

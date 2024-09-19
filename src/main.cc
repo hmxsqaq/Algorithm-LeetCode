@@ -1,7 +1,8 @@
 #include "1_two_sum.h"
+#include "9_palindrome_number.h"
 
 int main()
 {
-    Solution1_TwoSum::test();
+    Solution9_PalindromeNumber::test();
     return 0;
 }
