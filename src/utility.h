@@ -10,6 +10,8 @@
 #include <map>
 #include <unordered_set>
 #include <unordered_map>
+#include <algorithm>
+#include <memory>
 
 #define LOG(message) std::cout << message << "\n"
 

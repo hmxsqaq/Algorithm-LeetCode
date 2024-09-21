@@ -5,7 +5,7 @@
 
 class Solution13_RomanToInteger {
 public:
-    static int romanToIntBruteForce(std::string s) {
+    static int RomanToIntBruteForce(std::string s) {
         int sum = 0;
         char previous_digit;
         for (auto digit : s) {
@@ -29,7 +29,7 @@ public:
         return sum;
     }
 
-    static int romanToInt(std::string s) {
+    static int RomanToInt(std::string s) {
         static std::unordered_map<char, int> roman_map = {
             {'I', 1},
             {'V', 5},
@@ -50,9 +50,9 @@ public:
         return sum;
     }
 
-    static void test() {
+    static void Test() {
         std::string s = "MCMXCIV";
-        LOG(romanToInt(s));
+        LOG(RomanToInt(s));
     }
 };
 

@@ -33,7 +33,7 @@ Loop through the string `s` from left to right, and add the corresponding value 
 To handle situations like `IV`, we can store the value of the previous character, and if the previous value is special, we will change the value of the current character to `value - 2 * previous_value`.
 
 ```cpp
-int romanToIntBruteForce(std::string s) {
+int RomanToIntBruteForce(std::string s) {
     int sum = 0;
     char previous_digit;
     for (auto digit : s) {
@@ -66,7 +66,7 @@ int romanToIntBruteForce(std::string s) {
 In previous solution, we have to artificially handle the special cases. We can use a map to store the value of each character, and then we can simply add the value of each character to the result.
 
 ```cpp
-int romanToInt(std::string s) {
+int RomanToInt(std::string s) {
     static std::unordered_map<char, int> roman_map = {
         {'I', 1},
         {'V', 5},

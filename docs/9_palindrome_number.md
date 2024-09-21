@@ -11,7 +11,7 @@ Given an integer `x`, return _`true` if `x` is a [palindrome](https://en.wikiped
 Simply convert the `x` to a `std::string`, then we can access each digit by index.
 
 ```c++
-bool isPalindrome_ToString(int x) {
+bool IsPalindrome_ToString(int x) {
     if (x < 0) return false;
     std::string x_string = std::to_string(x);
     size_t i = 0, j = x_string.size() - 1;
@@ -32,7 +32,7 @@ bool isPalindrome_ToString(int x) {
 We can reverse `x` and compare it with the original number.
 
 ```c++
-bool isPalindrome_Reverse(int x) {
+bool IsPalindrome_Reverse(int x) {
     if (x < 0) return false;
     size_t temp = x, x_reversed = 0;
     while (temp != 0){
@@ -52,7 +52,7 @@ bool isPalindrome_Reverse(int x) {
 Actually we can just reverse half of the number and compare it with the other half.
 
 ```c++
-bool isPalindrome_ReverseHalf(int x) {
+bool IsPalindrome_ReverseHalf(int x) {
     if (x < 0 || (x % 10 == 0 && x != 0)) return false;
     size_t x_reversed = 0;
     while (x > x_reversed) {

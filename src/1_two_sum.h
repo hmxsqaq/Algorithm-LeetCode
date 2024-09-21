@@ -5,7 +5,7 @@
 
 class Solution1_TwoSum {
 public:
-    static std::vector<int> twoSum_BruteForce(std::vector<int>& nums, int target) {
+    static std::vector<int> TwoSum_BruteForce(std::vector<int>& nums, int target) {
         for (int i = 0; i < nums.size() - 1; ++i) {
             for (int j = i + 1; j < nums.size(); ++j) {
                 if (nums[i] + nums[j] == target)
@@ -15,7 +15,7 @@ public:
         return {0};
     }
 
-    static std::vector<int> twoSum_TwoPassHashTable(std::vector<int>& nums, int target) {
+    static std::vector<int> TwoSum_TwoPassHashTable(std::vector<int>& nums, int target) {
         std::unordered_map<int, int> hash;
         for (int i = 0; i < nums.size(); ++i)
             hash[target - nums[i]] = i;
@@ -27,7 +27,7 @@ public:
         return {0};
     }
 
-    static std::vector<int> twoSum_OnePassHashTable(std::vector<int>& nums, int target) {
+    static std::vector<int> TwoSum_OnePassHashTable(std::vector<int>& nums, int target) {
         std::unordered_map<int, int> hash;
         for (int i = 0; i < nums.size(); ++i) {
             if (hash.find(nums[i]) != hash.end())
@@ -37,10 +37,10 @@ public:
         return {0};
     }
 
-    static void test(){
+    static void Test(){
         std::vector<int> nums = {3, 2, 4};
         int target = 6;
-        LOG(Solution1_TwoSum::twoSum_OnePassHashTable(nums, target));
+        LOG(Solution1_TwoSum::TwoSum_OnePassHashTable(nums, target));
     }
 };
 
