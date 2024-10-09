@@ -1,6 +1,6 @@
 # LeetCode Log
 
-A log of my LeetCode problem-solving journey.
+A log of my LeetCode problem-solving journey. Let's code!
 
 ## Table of Contents
 
